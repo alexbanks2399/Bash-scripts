@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"
+echo "|The total number of occurrences of the lines containing the word 'chemical'=" $(grep -c 'chemical' 52293-0.txt)"             |"
+echo "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"
+echo "|The total number of lines not including the word 'heat'=" $(grep -v -c 'heat' 52293-0.txt) "                              |"
+echo "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"
+echo "|The total number of lines containg the word 'chemical' and not including the word 'heat'" $(grep 'chemical' 52293-0.txt | grep -v -c 'heat')" |"
+echo "|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|"
